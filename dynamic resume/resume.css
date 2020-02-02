@@ -1,0 +1,257 @@
+body
+{
+	margin: 0px;
+
+}
+#body-header
+{
+	height: 65vh;
+    opacity: 0.8;
+	background-image: url("mac.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;/*to give the effect of parallax.parallax ku hota h google p search kr lio jb bhool jaye*/
+
+}
+.horizontal-list
+{
+	list-style: none;   
+	padding-left: 0px;   /*jo automatically padddings and margins diye gaye hongee ye likhne se vo chale jayenge */
+	margin: 0px;
+}
+
+.horizontal-list li
+{
+	display:inline-block;
+	margin :0px 8px 8px 0px;     /*top right bottom left */
+}
+.horizontal-list li a
+{
+	color:white;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+.text-center
+{
+	text-align: center;
+}
+.horizontal-list li a:hover
+{
+	color: lightgrey;
+	border-bottom: 1px solid white;
+}
+#name-social-container
+{
+	margin-top: 20vh;
+}
+
+#my-name
+{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+.social-icons li a i
+{
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 50%;
+}
+.social-icons li a i:hover
+{
+	box-shadow: -10px -10px 6px 4px cyan;   /*copy likha hai anuj iske baare mei..vaheen se padhio..*/
+}
+#about
+{
+	height: auto;
+	width: 100%;
+ position: relative;  /* ye position relative karne se hi image sahi se display ho rhi hai */
+}
+#my-image
+{
+	height: 12rem;
+	width: 12rem;
+	margin:auto;
+	margin-top: -17vh;
+
+
+}
+#my-image img
+{
+	height: 100%;    /*100% of the parent means 100% of the height and width given in div i.e #my-image.*/
+	width: 100%;
+	border-radius: 50%;
+}
+#para
+{
+	margin-left: 180px;
+	margin-right: 180px;
+    padding: 10px;
+    font-size: 1.5rem;
+    
+    text-align: justify;
+
+}
+section
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section:nth-child(2n)
+{
+	background-color: grey; /* every even child of section will be  coloured by grey */
+}
+section:nth-child(2n+1)
+{
+	background-color: lightgrey;    /*every odd child of section will be couloured by light grey*/
+}
+.section-heading
+{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+.section-heading span
+{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+.skills-display
+{
+	width: 70%;
+	/*border:2px solid black;*/
+	height: 100px;
+	display: flex;
+
+
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-content: center;
+	
+	
+}
+.skill-progress
+{
+	width: 7rem;
+	height: 1.9rem;
+	background-color: silver;
+	border-radius: 0.8rem;
+
+
+	
+}
+.eighty-five-percent
+{
+	width: 85%;
+	height: inherit;
+	background-color: orange;
+}
+.skill-name span
+{
+	color: white;
+	font-size: 1.5rem;
+	margin-left: 10px;
+}
+.skill-progress > div
+{
+	border-radius: 20px 0px 0px 20px;
+}
+.mb75px
+{
+	margin-bottom: 75px;
+}
+.timeline
+{
+	position: relative;
+	width: 75%;
+
+}
+.timeline-box
+{
+	position: relative;
+	margin: 5px;
+	height: auto;
+
+	width: 40%;
+
+	left: 5%;
+	min-height: 150px;
+	border: 2px solid black;
+	
+	font-size: 1rem;
+	color:red;
+	font-size: 30px;
+	overflow-wrap: break-word;
+	background-color: lightgreen;
+
+}
+.timeline-box:nth-child(2n)
+{
+	left: 55%;
+}
+.timeline-divider
+{
+	position: absolute;
+	height: 85%;
+	width: 0%;
+	border: 3px dashed #0096fa6b;
+	top: 10%;
+	left: 50%;
+
+}
+.timeline-traveller
+{
+  position: sticky;
+  top:25%;
+  transform: rotate(90deg);
+}
+.timeline-boxe
+{
+position: relative;
+	margin: 5px;
+	height: auto;
+
+	width: 40%;
+
+	left: 5%;
+	min-height: 150px;
+	border: 2px solid black;
+	
+	font-size: 1rem;
+	color:red;
+	font-size: 30px;
+	overflow-wrap: break-word;
+	background-color: orange;
+
+}
+.timeline-boxe:nth-child(2n)
+{
+	left: 55%;
+}
+.contactinfo
+{height: 400px;
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+
+	
+
+}
+#Contact
+{
+background-image: linear-gradient(to top right,red,cyan,blue);
+}
+.getintouch
+{
+	font-size: 30px;
+}

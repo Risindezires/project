@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+<h1>Hello</h1>
+<p><%=startingContent%></p>
+<% console.log(posts); %>  <!-- scriplet tags -->
+<% posts.forEach(function(posts){ %>    <!-- for each loop b for loop ki tarah hi hai ye post array ko traverse karega pura -->
+<h1><%=posts.title%></h1>
+<p><%=posts.content.substring(0,100)+" ..."%>  <!-- content ko trunket kar dega yaani ki 100 characters tk hi dikhayega uske baad ... dikhayega -->
+<a href="/posts/<%=posts.title%>">Read More</a>
+</p>
+<% }) %>
+<%- include("partials/footer") -%>
